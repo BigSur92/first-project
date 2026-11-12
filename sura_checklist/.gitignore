@@ -1,0 +1,6 @@
+.env
+setup_checklist.original.sh
+data.json*
+__pycache__/
+venv/
+backups/
