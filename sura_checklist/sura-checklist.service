@@ -1,0 +1,13 @@
+[Unit]
+Description=Sura Sushi checklist bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=/opt/sura_checklist
+ExecStart=/opt/sura_checklist/venv/bin/python /opt/sura_checklist/bot.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
